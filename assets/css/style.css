@@ -546,3 +546,11 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
         width: 100%;
     }
 }
+
+/* adding css */
+
+#view-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
