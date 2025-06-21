@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Safeena's Portfolio</title>
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="assets/css/portfolio.css">
+    </head>
+    <body>
+        <!-- Sidebar for Navigation -->
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="uil uil-bars"></i>
+        </div>
+
+        <aside class="sidebar" id="sidebar">
+            <nav class="nav">
+                <div class="nav-logo">
+                    <a href="index.html" class="nav-logo-text">S</a>
+                </div>
+                <div class="nav-menu">
+                    <div class="menu">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="index.html#home"
+                                    class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#about"
+                                    class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#skills"
+                                    class="nav-link">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#work"
+                                    class="nav-link active-link">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#services"
+                                    class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="index.html#contact"
+                                    class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-close" id="nav-close">
+                    <i class="uil uil-times"></i>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main">
+            <section class="work section" id="work">
+                <h2 class="section-title" data-heading="My Creations">My
+                    Portfolio</h2>
+
+                <!-- ===== MODIFIED: FILTER BUTTONS ===== -->
+                <div class="work-filters">
+                    <!-- <span class="work-filter" data-filter="all">All</span> -->
+                    <span class="work-filter active-work"
+                        data-filter="brochures">Brochures</span>
+                    <span class="work-filter" data-filter="social-media">Social
+                        Media</span>
+                    <span class="work-filter" data-filter="menu-cards">Menu
+                        Cards</span>
+                    <span class="work-filter" data-filter="carton-boxes">Carton
+                        Boxes</span>
+                </div>
+
+                <!-- The container is empty. JS will fill it. -->
+                <div class="work-container container">
+                    <!-- Portfolio items will be generated here by JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Portfolio Popup Structure -->
+        <div class="portfolio-popup">
+            <div class="portfolio-popup-inner">
+                <span class="portfolio-popup-close"><i
+                        class="uil uil-times"></i></span>
+                <img src alt class="portfolio-popup-img">
+            </div>
+        </div>
+
+        <script src="assets/js/portfolio.js"></script>
+    </body>
+</html>
