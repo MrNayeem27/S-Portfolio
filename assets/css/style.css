@@ -696,13 +696,13 @@ input {
     visibility: visible;
 }
 
-.portfolio-popup-inner {
+/* .portfolio-popup-inner {
     background-color: var(--box-color);
     width: 900px;
     border-radius: .5rem;
     padding: 2.5rem;
     position: relative;
-}
+} */
 
 .portfolio-popup-content {
     grid-template-columns: repeat(2, 1fr);
