@@ -12,6 +12,7 @@
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/portfolio.css">
     </head>
     <body>
         <div class="nav-toggle" id="nav-toggle">
@@ -100,10 +101,10 @@
                     <div class="home-data">
                         <h1 class="home-title">Hi, I'm Safeena</h1>
                         <h3 class="home-subtitle">Graphic Designer</h3>
-                        <p class="home-description">I have high level experience
+                        <!-- <p class="home-description">I have high level experience
                             in Graphic Desing, development knowledge and
                             producing
-                            quality work</p>
+                            quality work</p> -->
                         <a href="#about" class="button">
                             <i class="uil uil-user button-icon"></i>
                             More About me!
@@ -155,7 +156,8 @@
             </section>
 
             <section class="about section" id="about">
-                <h2 class="section-title" data-heading="My Intro">About me</h2>
+                <h2 class="section-title">My Intro</h2>
+                <!-- <h2 class="section-title" data-heading="My Intro">About me</h2> -->
 
                 <div class="about-container container grid">
                     <img src="https://i.postimg.cc/W1YZxTpJ/about-img.jpg" alt
@@ -201,8 +203,9 @@
             </section>
 
             <section class="qualification section">
-                <h2 class="section-title"
-                    data-heading="My Journey">Qualifications</h2>
+                <h2 class="section-title">My Journey</h2>
+                <!-- <h2 class="section-title"
+                    data-heading="My Journey">Qualifications</h2> -->
 
                 <div class="qualification-container container grid">
                     <div class="education">
@@ -289,8 +292,9 @@
             </section>
 
             <section class="skills section" id="skills">
-                <h2 class="section-title" data-heading="My Abilities">My
-                    Experience</h2>
+                <h2 class="section-title">My Abilities</h2>
+                <!-- <h2 class="section-title" data-heading="My Abilities">My
+                    Experience</h2> -->
 
                 <div class="skills-container container grid">
                     <div class="skills-tabs">
@@ -308,7 +312,7 @@
                             <i class="uil uil-angle-down skills-arrow"></i>
                         </div>
 
-                        <div class="skills-header" data-target="#design">
+                        <!-- <div class="skills-header" data-target="#design">
                             <i class="uil uil-swatchbook skills-icon"></i>
 
                             <div>
@@ -319,7 +323,7 @@
                             </div>
 
                             <i class="uil uil-angle-down skills-arrow"></i>
-                        </div>
+                        </div> -->
 
                         <div class="skills-header" data-target="#backend">
                             <i class="uil uil-film skills-icon"></i>
@@ -335,6 +339,7 @@
                         </div>
                     </div>
 
+                    <!-- Graphic Designer -->
                     <div class="skills-content">
                         <div class="skills-group skills-active" data-content
                             id="frontend">
@@ -392,7 +397,8 @@
                             </div>
                         </div>
 
-                        <div class="skills-group" data-content id="design">
+                        <!-- UI / UX Designer -->
+                        <!-- <div class="skills-group" data-content id="design">
                             <div class="skills-list grid">
 
                                 <div class="skills-data">
@@ -432,8 +438,9 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
+                        <!-- Video Editor -->
                         <div class="skills-group" data-content id="backend">
                             <div class="skills-list grid">
                                 <div class="skills-data">
@@ -491,17 +498,47 @@
                 </div>
             </section>
 
-            <section class="work section" id="work">
+            <!-- My Portfolio -->
+
+            <main class="main">
+                <section class="work section" id="work">
+                    <h2 class="section-title">My
+                        Portfolio</h2>
+
+                    <!-- ===== MODIFIED: FILTER BUTTONS ===== -->
+                    <div class="work-filters">
+                        <!-- <span class="work-filter" data-filter="all">All</span> -->
+                        <span class="work-filter active-work"
+                            data-filter="brochures">Brochures</span>
+                        <span class="work-filter"
+                            data-filter="social-media">Social
+                            Media</span>
+                        <span class="work-filter" data-filter="menu-cards">Menu
+                            Cards</span>
+                        <span class="work-filter"
+                            data-filter="carton-boxes">Carton
+                            Boxes</span>
+                    </div>
+
+                    <!-- The container is empty. JS will fill it. -->
+                    <div class="work-container container">
+                        <!-- Portfolio items will be generated here by JavaScript -->
+                    </div>
+                </section>
+            </main>
+
+            <!-- <section class="work section" id="work">
+                <h2 class="section-title">My Portfolio</h2>
                 <h2 class="section-title" data-heading="My Portfolio">Recent
                     Works</h2>
 
-                <!-- <div class="work-filters">
+                <div class="work-filters">
                     <span class="work-item active-work"
                         data-filter="all">All</span>
                     <span class="work-item" data-filter=".web">Web</span>
                     <span class="work-item" data-filter=".app">App</span>
                     <span class="work-item" data-filter=".design">Design</span>
-                </div> -->
+                </div>
 
                 <div class="work-container container grid">
                     <div class="work-card mix web">
@@ -644,14 +681,17 @@
                 </div>
 
                 <div id="view-more">
-                    <a href="#" class="button"> 
+                    <a href="portfolio.html" class="button"> 
                         View More
                         <i class="uil uil-arrow-circle-up 
                         button-icon"></i>
                     </a>
                 </div>
 
-            </section>
+            </section> -->
+
+
+            <!-- My Portfolio End -->
 
 
             <!-- Services -->
@@ -690,7 +730,8 @@
                 </div>
             </div>
 
-            <section class="services section" id="services">
+            <!-- <section class="services section" id="services">
+                <h2 class="section-title">Services</h2>
                 <h2 class="section-title" data-heading="Services">What I
                     Offer</h2>
 
@@ -920,7 +961,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- <section class="testimonials section">
                 <h2 class="section-title"
@@ -1014,8 +1055,9 @@
             </section> -->
 
             <section class="contact section" id="contact">
-                <h2 class="section-title" data-heading="Get in Touch">Contact
-                    me</h2>
+                <h2 class="section-title">Get in Touch</h2>
+                <!-- <h2 class="section-title" data-heading="Get in Touch">Contact
+                    me</h2> -->
 
                 <div class="contact-container container grid">
                     <div class="contact-content">
@@ -1168,5 +1210,6 @@
         <script
             src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/portfolio.js"></script>
     </body>
 </html>
