@@ -301,7 +301,7 @@ input {
 }
 
 .home {
-    background: url('https://i.postimg.cc/DZxD1xGL/home-bg.jpg');
+    background: url('#');
     background-size: cover;
     background-position: center center;
     height: 100vh;
