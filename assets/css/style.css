@@ -301,9 +301,11 @@ input {
 }
 
 .home {
-    background: url('#');
-    background-size: cover;
-    background-position: center center;
+    background: url('https://i.postimg.cc/Hkh9YyrM/recruitment-1.png');
+    /* background: url('https://i.postimg.cc/Sx3xNSkR/new-s-1.png'); */
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: right;
     height: 100vh;
 }
 
@@ -367,8 +369,8 @@ input {
 }
 
 .home-description {
-    max-width: 450px;
-    margin-bottom: var(--mb2);
+    /* max-width: 450px; */
+    margin-bottom: var(--mb1);
 }
 
 .my-info {
