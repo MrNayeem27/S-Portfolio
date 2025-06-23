@@ -1463,6 +1463,7 @@ textarea.input {
 
     .about-description {
         padding: 0;
+        text-align: start;
     }
 
     .services-modal-content {
