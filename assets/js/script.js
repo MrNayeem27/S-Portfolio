@@ -151,18 +151,49 @@ function navHighlighter() {
 
 // Activating Sidebar
 
+/*=============== SHOW & HIDE MENU ===============*/
 const navMenu = document.getElementById('sidebar');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
-if(navToggle) {
+/*===== MENU SHOW =====*/
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-sidebar');
     })
 }
 
-if(navClose) {
+/*===== MENU HIDDEN =====*/
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-sidebar');
     })
 }
+
+/*=============== CLOSE MENU WHEN LINK IS CLICKED ===============*/
+const navLinks = document.querySelectorAll('.nav-link');
+const linkAction = () => {
+    navMenu.classList.remove('show-sidebar');
+}
+
+navLinks.forEach(link => link.addEventListener('click', linkAction));
+
+
+/*=============== SCROLL UP ===============*/
+const scrollUp = document.getElementById('scroll-up');
+const scrollUpFunction = () => {
+    if (window.scrollY >= 350) {
+        scrollUp.classList.add('show-scroll');
+    } else {
+        scrollUp.classList.remove('show-scroll');
+    }
+}
+
+window.addEventListener('scroll', scrollUpFunction);
+scrollUp.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});

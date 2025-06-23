@@ -1598,3 +1598,31 @@ textarea.input {
     justify-content: center;
     margin-top: 3rem;
 }
+
+
+/*=============== SCROLL UP BUTTON ===============*/
+.scroll-up {
+    position: fixed;
+    right: 1.5rem;
+    bottom: -30%; /* Start hidden below the screen */
+    background-color: var(--skin-color); /* Use your theme's color */
+    color: #fff; /* White icon color */
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    display: inline-flex;
+    z-index: 10;
+    transition: bottom 0.4s, transform 0.4s; /* Smooth transition for appearing */
+}
+
+.scroll-up:hover {
+    transform: translateY(-0.25rem); /* Slight lift on hover */
+}
+
+.scroll-up-icon {
+    font-size: 1.2rem;
+}
+
+/* Show the button when .show-scroll class is added */
+.show-scroll {
+    bottom: 3rem; /* Position it on the screen */
+}
